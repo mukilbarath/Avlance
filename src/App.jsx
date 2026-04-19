@@ -8,6 +8,7 @@ const servicesData = [
     id: '01',
     title: 'Web Design & Development',
     tagline: 'Your digital storefront, built to impress and convert',
+    img: '/images/web-dev.png',
     desc: "Your website is often the first — and most lasting — impression you make. We design and build websites that don't just look stunning; they're fast, responsive, and engineered to turn visitors into paying clients. Whether it's a landing page, a corporate site, or a full-scale web platform, we build it to work as hard as you do.",
     get: ['Custom UI/UX design', 'Mobile-first, responsive builds', 'SEO-ready architecture', 'Fast load speeds & performance', 'CMS integration (if needed)', 'Post-launch lifetime maintenance'],
     why: "We don't use cookie-cutter templates. Every site we build is designed from scratch around your brand and your goals — then supported forever after launch.",
@@ -17,6 +18,7 @@ const servicesData = [
     id: '02',
     title: 'Mobile App Development',
     tagline: 'Native experiences your users will keep coming back to',
+    img: '/images/mobile-app.png',
     desc: "Mobile is where your customers live. We build iOS and Android apps that are intuitive, performant, and built for real-world usage — not just demos. From consumer apps to internal business tools, our developers bring your idea to life with clean code and a user experience that feels effortless.",
     get: ['iOS & Android development', 'UI/UX design for mobile', 'API & backend integration', 'App Store & Play Store submission', 'QA testing & bug-free delivery', 'Ongoing updates & support'],
     why: "Our mobile developers specialise in nothing else. You get focused expertise, not a web developer moonlighting in mobile — plus lifetime maintenance so your app never feels outdated.",
@@ -26,6 +28,7 @@ const servicesData = [
     id: '03',
     title: 'ERP Solutions',
     tagline: 'Streamline your entire operation with one intelligent system',
+    img: '/images/erp.png',
     desc: "Running a business across spreadsheets, disconnected software, and manual processes isn't sustainable. We build custom ERP systems that unify your operations — from inventory and HR to finance, sales, and beyond — giving you real-time visibility and control across every department.",
     get: ['Custom ERP architecture & build', 'Module-based: HR, Finance, CRM, Inventory', 'Role-based access & dashboards', 'Data migration from legacy systems', 'Staff training & documentation', 'Lifetime support & upgrades'],
     why: "Off-the-shelf ERPs force you to adapt your business to their system. We build yours around how you actually work — then stay on to evolve it as your business grows.",
@@ -37,7 +40,8 @@ const servicesData = [
     tagline: 'Make your first impression unforgettable',
     desc: "Great branding isn't just a logo — it's the feeling your business leaves behind. We craft visual identities that are distinctive, memorable, and built to scale across every touchpoint. From your logo to your full brand guidelines, we give your business the visual foundation it deserves.",
     get: ['Logo design (multiple concepts)', 'Colour palette & typography system', 'Brand guidelines document', 'Business card & stationery design', 'Social media brand kit', 'All source files included'],
-    why: "Our designers don't just make things look good — they build visual systems with strategy behind them. Your brand will be consistent, recognisable, and ready for any medium."
+    why: "Our designers don't just make things look good — they build visual systems with strategy behind them. Your brand will be consistent, recognisable, and ready for any medium.",
+    img: '/images/branding.png'
   },
   {
     id: '05',
@@ -45,7 +49,8 @@ const servicesData = [
     tagline: 'Get found. Get clicks. Get customers.',
     desc: "Having a great website means nothing if no one sees it. We drive qualified traffic to your business through smart SEO, targeted ad campaigns, and data-backed digital strategy. Every move we make is tied to real outcomes — more visibility, more leads, more revenue.",
     get: ['On-page & technical SEO', 'Keyword research & content strategy', 'Google & Meta ad campaigns', 'Performance tracking & reporting', 'Conversion rate optimisation', 'Monthly strategy reviews'],
-    why: "We don't chase vanity metrics. We focus on what actually matters — traffic that converts. Every campaign we run is built around your specific business goals."
+    why: "We don't chase vanity metrics. We focus on what actually matters — traffic that converts. Every campaign we run is built around your specific business goals.",
+    img: '/images/marketing.png'
   },
   {
     id: '06',
@@ -54,7 +59,8 @@ const servicesData = [
     desc: "Repetitive tasks, manual follow-ups, data entry, call handling — these are hours your team should never waste. We build custom AI agents and automation workflows that handle your operational load intelligently, so your team can focus on work that actually matters.",
     get: ['Custom AI agent development', 'Call automation & IVR systems', 'Workflow & process automation', 'CRM & tool integrations', 'Lead qualification bots', 'Ongoing tuning & optimisation'],
     why: "We don't sell generic automation tools — we engineer solutions built specifically around your workflows. The result is systems that actually fit, not systems you have to work around.",
-    chip: 'Lifetime maintenance included'
+    chip: 'Lifetime maintenance included',
+    img: '/images/ai-automation.png'
   },
   {
     id: '07',
@@ -62,7 +68,8 @@ const servicesData = [
     tagline: 'Stories told in motion — with impact that lasts',
     desc: "In a world of scrolling thumbs, video stops people. We produce high-quality video content and animations that communicate your brand, product, or message in a way that text and images simply can't. Whether it's a brand film, explainer video, or social reel — we make you impossible to ignore.",
     get: ['Brand & corporate videos', 'Explainer & product demo animations', 'Social media reels & short-form content', 'Motion graphics & visual effects', 'Script writing & storyboarding', 'Multi-format delivery'],
-    why: "Our video team handles everything from concept to final cut. No outsourcing, no delays — just polished, purposeful content that represents your brand at its best."
+    why: "Our video team handles everything from concept to final cut. No outsourcing, no delays — just polished, purposeful content that represents your brand at its best.",
+    img: '/images/video.png'
   },
   {
     id: '08',
@@ -70,7 +77,8 @@ const servicesData = [
     tagline: 'Words that connect, convert, and leave a mark',
     desc: "The best-designed website falls flat without the right words. We write copy and content that speaks directly to your audience — clear, compelling, and built to drive action. From website pages and landing pages to blogs and email campaigns, every word earns its place.",
     get: ['Website & landing page copy', 'Blog posts & long-form content', 'Email marketing sequences', 'Ad copy & campaign messaging', 'Product descriptions', 'Brand voice & tone guidelines'],
-    why: "We write with strategy, not just style. Every piece of content we produce is built around your audience's psychology and your business's conversion goals."
+    why: "We write with strategy, not just style. Every piece of content we produce is built around your audience's psychology and your business's conversion goals.",
+    img: '/images/web-dev.png'
   },
   {
     id: '09',
@@ -78,7 +86,8 @@ const servicesData = [
     tagline: 'A consistent, compelling presence — without the overwhelm',
     desc: "Showing up consistently on social media is one of the most powerful things a brand can do — and one of the hardest to maintain. We handle your entire social presence: strategy, content creation, scheduling, and community engagement. You stay focused on your business while we grow your audience.",
     get: ['Monthly content calendar', 'Platform-specific content creation', 'Graphics, captions & hashtag strategy', 'Scheduling & publishing', 'Community management & replies', 'Monthly performance reports'],
-    why: "We treat your social channels like they're our own brand. That means consistency, creativity, and content that actually resonates — not just filler posts to meet a quota."
+    why: "We treat your social channels like they're our own brand. That means consistency, creativity, and content that actually resonates — not just filler posts to meet a quota.",
+    img: '/images/social-media.png'
   },
   {
     id: '10',
@@ -86,7 +95,8 @@ const servicesData = [
     tagline: 'Visuals that stop the scroll and spark action',
     desc: "Whether it's a digital ad, a printed poster, a billboard, or a promotional banner — the design either commands attention or gets ignored. Our designers create visually striking advertising material that communicates your message instantly and drives the response you're looking for.",
     get: ['Digital & print ad creatives', 'Event & promotional posters', 'Social media ad banners', 'Flyers & brochures', 'Billboard & outdoor advertising', 'All formats & sizes delivered'],
-    why: "Our designers understand that good advertising design is one part art, one part psychology. We make visuals that are beautiful and strategically built to drive action."
+    why: "Our designers understand that good advertising design is one part art, one part psychology. We make visuals that are beautiful and strategically built to drive action.",
+    img: '/images/branding.png'
   },
   {
     id: '11',
@@ -149,6 +159,7 @@ const ViewHome = ({ setView }) => (
     {/* Hero */}
     <section className="min-h-[85vh] flex flex-col justify-center pt-40 relative">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] max-w-[800px] max-h-[800px] bg-[#c9a96e]/10 blur-[120px] rounded-full pointer-events-none" />
+      <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[22vw] font-bold tracking-[0.1em] whitespace-nowrap pointer-events-none select-none" style={{ fontFamily: "'Barlow Condensed', sans-serif", color: 'rgba(255,255,255,0.015)' }}>AVLANCE</span>
 
       <div className="relative z-10">
         <FadeIn>
@@ -278,6 +289,7 @@ const ViewHome = ({ setView }) => (
       <FadeIn>
         <div className="bg-neutral-900/50 border border-[#c9a96e]/20 rounded-3xl p-10 sm:p-20 text-center flex flex-col items-center justify-center relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#c9a96e]/10 to-transparent pointer-events-none" />
+          <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[18vw] font-bold tracking-[0.1em] whitespace-nowrap pointer-events-none select-none" style={{ fontFamily: "'Barlow Condensed', sans-serif", color: 'rgba(255,255,255,0.015)' }}>AVLANCE</span>
           <h2 className="text-3xl sm:text-5xl font-medium tracking-tight mb-4 relative z-10">Ready to build something great?</h2>
           <p className="text-neutral-400 text-lg max-w-xl mx-auto mb-10 relative z-10">Tell us your vision. We'll handle everything — from first pixel to lifetime support.</p>
           <div className="flex flex-wrap justify-center gap-4 relative z-10">
@@ -310,7 +322,15 @@ const ViewServices = ({ setView }) => (
       {servicesData.map((s, index) => (
         <FadeIn key={s.id} delay={index * 50}>
           <div className="border border-neutral-800 bg-black rounded-3xl p-8 sm:p-12 group hover:border-[#c9a96e]/60 transition-colors relative overflow-hidden">
-            <div className="absolute top-0 right-0 p-8 sm:p-12 text-sm font-mono text-[#c9a96e] opacity-40 group-hover:opacity-100 transition-opacity">{s.id}</div>
+            <div className="absolute top-0 right-0 p-8 sm:p-12 text-sm font-mono text-[#c9a96e] opacity-40 group-hover:opacity-100 transition-opacity z-20">{s.id}</div>
+
+            {/* Service Image */}
+            {s.img && (
+              <div className="absolute top-0 right-0 w-[65%] h-full hidden lg:block pointer-events-none">
+                <img src={s.img} alt="" className="w-full h-full object-cover opacity-[0.07] group-hover:opacity-[0.15] transition-opacity duration-700 grayscale" />
+                <div className="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent" />
+              </div>
+            )}
 
             <div className="max-w-3xl relative z-10">
               <h2 className="text-2xl sm:text-3xl font-medium mb-3 group-hover:text-[#c9a96e] transition-colors">{s.title}</h2>
@@ -472,6 +492,7 @@ const ViewContact = ({ setView }) => {
     <div className="flex flex-col gap-20 sm:gap-32 pb-20">
       <section className="pt-40 relative">
         <div className="absolute top-1/2 left-0 w-[400px] h-[400px] bg-[#c9a96e]/10 blur-[100px] rounded-full pointer-events-none -z-10" />
+        <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[22vw] font-bold tracking-[0.1em] whitespace-nowrap pointer-events-none select-none" style={{ fontFamily: "'Barlow Condensed', sans-serif", color: 'rgba(255,255,255,0.015)' }}>AVLANCE</span>
         <FadeIn>
           <SectionLabel>Contact</SectionLabel>
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-medium tracking-tight leading-[1.1] mb-8 max-w-3xl">
@@ -610,12 +631,130 @@ const ViewContact = ({ setView }) => {
   );
 };
 
+// --- PRELOADER --- //
+
+const Preloader = ({ onComplete }) => {
+  const [phase, setPhase] = useState('visible'); // visible -> sliding -> done
+
+  useEffect(() => {
+    // Phase 1: Logo clip-path reveal + line animation plays for 4.8s
+    const slideTimer = setTimeout(() => setPhase('sliding'), 4800);
+    // Phase 2: Curtain slides up (1.6s transition), then remove from DOM
+    const doneTimer = setTimeout(() => {
+      setPhase('done');
+      onComplete();
+    }, 6400);
+    return () => {
+      clearTimeout(slideTimer);
+      clearTimeout(doneTimer);
+    };
+  }, [onComplete]);
+
+  if (phase === 'done') return null;
+
+  return (
+    <>
+      <style>{`
+        @keyframes fillProgress {
+          0% {
+            clip-path: inset(0 100% 0 0);
+            filter: brightness(0.8);
+          }
+          40% {
+            clip-path: inset(0 60% 0 0);
+            filter: brightness(1);
+          }
+          50% {
+            clip-path: inset(0 60% 0 0);
+          }
+          80% {
+            clip-path: inset(0 15% 0 0);
+          }
+          90% {
+            clip-path: inset(0 15% 0 0);
+          }
+          100% {
+            clip-path: inset(0 0 0 0);
+            filter: brightness(1.1) drop-shadow(0 0 10px rgba(201, 169, 110, 0.3));
+          }
+        }
+        @keyframes logoDive {
+          0% {
+            transform: scale(1);
+            opacity: 1;
+            filter: brightness(1.1) drop-shadow(0 0 10px rgba(201, 169, 110, 0.3));
+          }
+          40% {
+            transform: scale(0.92);
+            opacity: 1;
+            filter: brightness(1.3) drop-shadow(0 0 25px rgba(201, 169, 110, 0.8));
+          }
+          100% {
+            transform: scale(4) translateY(-20px);
+            opacity: 0;
+            filter: brightness(2) blur(10px);
+          }
+        }
+        @keyframes lineGrow {
+          0% {
+            height: 0;
+            opacity: 1;
+            transform: translateY(0);
+          }
+          50% {
+            height: 60px;
+            opacity: 1;
+            transform: translateY(0);
+          }
+          100% {
+            height: 60px;
+            opacity: 0;
+            transform: translateY(30px);
+          }
+        }
+      `}</style>
+      <div
+        className="fixed inset-0 z-[9999] flex flex-col items-center justify-center"
+        style={{
+          background: 'radial-gradient(circle at center, #111110 0%, #080808 100%)',
+          transition: 'transform 1.6s cubic-bezier(0.8, 0, 0.2, 1), opacity 1.6s ease',
+          transform: phase === 'sliding' ? 'translateY(-100%)' : 'translateY(0)',
+          opacity: phase === 'sliding' ? 0 : 1,
+          pointerEvents: phase === 'sliding' ? 'none' : 'auto',
+        }}
+      >
+        <div className="flex flex-col items-center" style={{ gap: '40px' }}>
+          <img
+            src="./Logo.png"
+            alt="AVLANCE"
+            style={{
+              height: '350px',
+              animation: 'fillProgress 3.6s cubic-bezier(0.65, 0, 0.35, 1) forwards, logoDive 1s 3.8s cubic-bezier(0.4, 0, 0.2, 1) forwards',
+            }}
+          />
+          <div
+            style={{
+              width: '1px',
+              height: '0',
+              background: '#c9a96e',
+              boxShadow: '0 0 15px rgba(201, 169, 110, 0.6)',
+              animation: 'lineGrow 2s 1s cubic-bezier(0.8, 0, 0.2, 1) forwards',
+            }}
+          />
+        </div>
+      </div>
+    </>
+  );
+};
+
 // --- MAIN APP --- //
 
 export default function App() {
   const [view, setView] = useState('home');
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [siteRevealed, setSiteRevealed] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -629,6 +768,22 @@ export default function App() {
     setMobileMenuOpen(false);
   }, [view]);
 
+  // Prevent scroll during preloader
+  useEffect(() => {
+    if (loading) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => { document.body.style.overflow = ''; };
+  }, [loading]);
+
+  const handlePreloaderComplete = React.useCallback(() => {
+    setLoading(false);
+    // Small delay then trigger site entrance animations
+    setTimeout(() => setSiteRevealed(true), 50);
+  }, []);
+
   const navLinks = [
     { id: 'home', label: 'Home' },
     { id: 'services', label: 'Services' },
@@ -637,7 +792,9 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#050505] text-neutral-100 font-sans selection:bg-[#c9a96e] selection:text-black">
+    <div className="min-h-screen bg-[#050505] text-neutral-100 font-sans selection:bg-[#c9a96e] selection:text-black overflow-x-hidden">
+      {/* Preloader */}
+      {loading && <Preloader onComplete={handlePreloaderComplete} />}
 
       {/* Navigation */}
       <nav className={`fixed top-0 left-0 w-full z-50 flex justify-center transition-all duration-[400ms] ${isScrolled ? 'pt-5' : 'pt-[30px]'}`}>
